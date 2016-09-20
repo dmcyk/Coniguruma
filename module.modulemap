@@ -1,5 +1,12 @@
-module Clibonig [system] {
-  header "/usr/local/include/oniguruma.h"
-  link "onig"
-  export *
+module Coniguruma [system] {
+  module libong {
+    header "/usr/local/include/oniguruma.h" 
+    link "onig" 
+    export * 
+  }
+
+  module congshim {
+    header "shim.h"
+    export *  
+  }
 }
